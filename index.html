@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <div class="container">
+       <h2 align="center">Firebase</h2>
+       <form id ="addForm">
+        <div class="from-group">
+            <label>Movie_id</label>
+            <input type="text" name="Movie_id" placeholder="--------" class="form-control"></input>
+        </div>
+        <div class="from-group">
+         <label>Movie_name</label>
+         <input type="text" name="Movie_name" placeholder="--------" class="form-control"></input>
+     </div>
+     
+         <button class="btn btn-primary">เพิ่ม</button>
+     </div>
+    </form>
+
+
+       <table class="table table bordered" id = "tbresult">
+
+        <tr>
+            <th>Movie_id</th>
+            <th>Movie_name</th>
+        </tr>
+       
+       </table>
+    </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1_GhR2si_I3XzHYSB6wNi9jtpdmecLlM",
+    authDomain: "fir-test-1d9f5.firebaseapp.com",
+    projectId: "fir-test-1d9f5",
+    storageBucket: "fir-test-1d9f5.appspot.com",
+    messagingSenderId: "734045424826",
+    appId: "1:734045424826:web:51aa2425a7f313ebfcc683",
+    measurementId: "G-QCCLLTH8L8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
